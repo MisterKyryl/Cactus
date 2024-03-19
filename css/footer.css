@@ -1,0 +1,121 @@
+.footer {
+	padding-block: 4rem 2.5rem;
+}
+.footer__container {
+}
+.footer__main {
+	display: grid;
+	grid-template-columns: minmax(auto, 400px) auto auto auto;
+	gap: 64px;
+	padding: 7rem 0rem;
+}
+.main-footer {
+}
+.main-footer__column {
+}
+.main-footer__logo {
+	display: inline-flex;
+	align-items: center;
+	column-gap: .25rem;
+	color: var(--title-color);
+	font-size: 24px;
+	font-weight: var(--font-semi-bold);
+}
+.main-footer__logo:not(:last-child) {
+	margin-bottom: 2rem;
+}
+.main-footer__logo-text {
+}
+.main-footer__text {
+	max-width: 180px;
+}
+.main-footer__label {
+	color: var(--title-color);
+	font-size: var(--h2-font-size);
+	font-weight: var(--font-semi-bold);
+}
+.main-footer__label:not(:last-child) {
+	margin-bottom: 2rem;
+}
+.main-footer__menu {
+}
+.menu-footer {
+}
+.menu-footer__list {
+	display: grid;
+	row-gap: .75rem;
+}
+.menu-footer__item {
+}
+.menu-footer__link {
+	transition: color .4s ease 0s;
+}
+.menu-footer__link:hover {
+	color: var(--white-color);
+}
+.main-footer__social {
+	display: flex;
+	column-gap: 1.25rem;
+}
+.main-footer__social .icon {
+	width: 24px;
+	height: 24px;
+}
+.main-footer__social img {
+	transition: filter .4s ease 0s;
+}
+.main-footer__social img:hover {
+	filter: brightness(150%);
+}
+.social-footer {
+}
+.social-footer__facebook {
+}
+.social-footer__instagram {
+}
+.social-footer__twitter {
+}
+.footer__bottom {
+	padding-top: 2rem;
+}
+.bottom-footer {
+}
+.bottom-footer__copy {
+	text-align: center;
+}
+@media (max-width: 61.998em) {
+	.footer {
+		padding-block: 2rem 1.5rem;
+	}
+	.footer__main {
+		grid-template-columns: minmax(auto, 300px) auto auto auto;
+		gap: 32px;
+		padding: 5rem 0rem;
+	}
+	.footer__bottom {
+		padding: 2rem 0rem;
+	}
+}
+@media (max-width: 47.998em) {
+	.footer__main {
+		grid-template-columns: auto auto;
+		row-gap: 48px;
+		column-gap: 24px;
+		padding: 0rem 0rem 2rem 0rem;
+	}
+	.main-footer__column:nth-child(1) {
+		grid-column: 2 span;
+	}
+	.main-footer__column:nth-child(4) {
+		grid-column: 2 span;
+	}
+	.main-footer__logo:not(:last-child) {
+		margin-bottom: 1.25rem;
+	}
+	.main-footer__text {
+		max-width: none;
+	}
+	.main-footer__label:not(:last-child) {
+		margin-bottom: 1.25rem;
+	}
+}
